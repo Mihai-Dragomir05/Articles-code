@@ -1,0 +1,242 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      9581,        232]
+NotebookOptionsPosition[      8549,        206]
+NotebookOutlinePosition[      8963,        222]
+CellTagsIndexPosition[      8920,        219]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"graf", "[", 
+    RowBox[{"{", 
+     RowBox[{"a_", ",", "e_"}], "}"}], "]"}], ":=", 
+   RowBox[{"Animate", "[", 
+    RowBox[{
+     RowBox[{"PolarPlot", "[", 
+      RowBox[{
+       FractionBox[
+        RowBox[{"a", " ", 
+         RowBox[{"(", 
+          RowBox[{"1", "-", 
+           SuperscriptBox["e", "2"]}], ")"}]}], 
+        RowBox[{"1", "+", 
+         RowBox[{"e", " ", 
+          RowBox[{"Cos", "[", "t", "]"}]}]}]], ",", 
+       RowBox[{"{", 
+        RowBox[{"t", ",", "0", ",", "tmax"}], "}"}]}], "]"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"tmax", ",", "0.001", ",", 
+       RowBox[{"2", " ", "\[Pi]"}]}], "}"}]}], "]"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.895720860885049*^9, 3.895720870937755*^9}, {
+  3.8957209274144115`*^9, 3.8957209673913493`*^9}},
+ CellLabel->"In[1]:=",ExpressionUUID->"376f1789-8241-4551-aeb6-bdd647cbab62"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"graf", "[", 
+  RowBox[{"{", 
+   RowBox[{"1", ",", "0.055"}], "}"}], "]"}]], "Input",
+ CellChangeTimes->{{3.8957209704666624`*^9, 3.895721001217822*^9}},
+ CellLabel->"In[3]:=",ExpressionUUID->"e9565504-3150-4498-b7b0-f3526fd5c125"],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`tmax$$ = 0.3945358546313563, 
+    Typeset`show$$ = True, Typeset`bookmarkList$$ = {}, 
+    Typeset`bookmarkMode$$ = "Menu", Typeset`animator$$, Typeset`animvar$$ = 
+    1, Typeset`name$$ = "\"untitled\"", Typeset`specs$$ = {{
+      Hold[$CellContext`tmax$$], 0.001, 2 Pi}}, Typeset`size$$ = {
+    360., {70., 74.7430595273718}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+    Typeset`skipInitDone$$ = True}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, "Variables" :> {$CellContext`tmax$$ = 0.001}, 
+      "ControllerVariables" :> {}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> 
+      PolarPlot[
+       1 (1 - 0.055^2)/(1 + 
+        0.055 Cos[$CellContext`t]), {$CellContext`t, 0, $CellContext`tmax$$}],
+       "Specifications" :> {{$CellContext`tmax$$, 0.001, 2 Pi, 
+         AppearanceElements -> {
+          "ProgressSlider", "PlayPauseButton", "FasterSlowerButtons", 
+           "DirectionButton"}}}, 
+      "Options" :> {
+       ControlType -> Animator, AppearanceElements -> None, DefaultBaseStyle -> 
+        "Animate", DefaultLabelStyle -> "AnimateLabel", SynchronousUpdating -> 
+        True, ShrinkingDelay -> 10.}, "DefaultOptions" :> {}],
+     ImageSizeCache->{407., {104.13403309800196`, 109.86596690199804`}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Animate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{{3.895720977293951*^9, 3.8957210019100733`*^9}},
+ CellLabel->"Out[3]=",ExpressionUUID->"d456f904-f3c6-4306-a2d0-b3a231337a03"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"graf", "[", 
+  RowBox[{"{", 
+   RowBox[{"1", ",", "0.206"}], "}"}], "]"}]], "Input",
+ CellChangeTimes->{{3.895721011924294*^9, 3.895721015821843*^9}},
+ CellLabel->"In[4]:=",ExpressionUUID->"b2fb7833-1aac-4c1c-b39a-a2038aa1ec81"],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`tmax$$ = 5.627352327420401, Typeset`show$$ =
+     True, Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{
+      Hold[$CellContext`tmax$$], 0.001, 2 Pi}}, Typeset`size$$ = {
+    360., {176., 179.81188313779978`}}, Typeset`update$$ = 0, 
+    Typeset`initDone$$, Typeset`skipInitDone$$ = True}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, "Variables" :> {$CellContext`tmax$$ = 0.001}, 
+      "ControllerVariables" :> {}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> 
+      PolarPlot[
+       1 (1 - 0.206^2)/(1 + 
+        0.206 Cos[$CellContext`t]), {$CellContext`t, 0, $CellContext`tmax$$}],
+       "Specifications" :> {{$CellContext`tmax$$, 0.001, 2 Pi, 
+         AppearanceElements -> {
+          "ProgressSlider", "PlayPauseButton", "FasterSlowerButtons", 
+           "DirectionButton"}}}, 
+      "Options" :> {
+       ControlType -> Animator, AppearanceElements -> None, DefaultBaseStyle -> 
+        "Animate", DefaultLabelStyle -> "AnimateLabel", SynchronousUpdating -> 
+        True, ShrinkingDelay -> 10.}, "DefaultOptions" :> {}],
+     ImageSizeCache->{407., {210.13403309800196`, 215.86596690199804`}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Animate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{3.8957210164827194`*^9},
+ CellLabel->"Out[4]=",ExpressionUUID->"3a04b54b-199c-4e8d-a000-bce47133d0ef"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"graf", "[", 
+  RowBox[{"{", 
+   RowBox[{"1", ",", "0.967"}], "}"}], "]"}]], "Input",
+ CellChangeTimes->{{3.895721031819151*^9, 3.895721036532031*^9}},
+ CellLabel->"In[5]:=",ExpressionUUID->"a82064af-e77b-46cb-8f7e-a4e9589f4ccb"],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`tmax$$ = 0.1327168239740416, 
+    Typeset`show$$ = True, Typeset`bookmarkList$$ = {}, 
+    Typeset`bookmarkMode$$ = "Menu", Typeset`animator$$, Typeset`animvar$$ = 
+    1, Typeset`name$$ = "\"untitled\"", Typeset`specs$$ = {{
+      Hold[$CellContext`tmax$$], 0.001, 2 Pi}}, Typeset`size$$ = {
+    360., {27., 32.11669476008203}}, Typeset`update$$ = 0, Typeset`initDone$$,
+     Typeset`skipInitDone$$ = True}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, "Variables" :> {$CellContext`tmax$$ = 0.001}, 
+      "ControllerVariables" :> {}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> 
+      PolarPlot[
+       1 (1 - 0.967^2)/(1 + 
+        0.967 Cos[$CellContext`t]), {$CellContext`t, 0, $CellContext`tmax$$}],
+       "Specifications" :> {{$CellContext`tmax$$, 0.001, 2 Pi, 
+         AppearanceElements -> {
+          "ProgressSlider", "PlayPauseButton", "FasterSlowerButtons", 
+           "DirectionButton"}}}, 
+      "Options" :> {
+       ControlType -> Animator, AppearanceElements -> None, DefaultBaseStyle -> 
+        "Animate", DefaultLabelStyle -> "AnimateLabel", SynchronousUpdating -> 
+        True, ShrinkingDelay -> 10.}, "DefaultOptions" :> {}],
+     ImageSizeCache->{407., {248.13403309800196`, 253.86596690199804`}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Animate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{3.895721043726619*^9},
+ CellLabel->"Out[5]=",ExpressionUUID->"ac5486ce-ad81-4a14-aae8-342033c75a7c"]
+}, Open  ]]
+},
+WindowSize->{573.75, 565.5},
+WindowMargins->{{221.25, Automatic}, {10.125, Automatic}},
+FrontEndVersion->"13.0 for Microsoft Windows (64-bit) (February 4, 2022)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"8c15b7af-dfdc-469b-b09a-9acb4a7ab2d2"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 894, 25, 81, "Input",ExpressionUUID->"376f1789-8241-4551-aeb6-bdd647cbab62"],
+Cell[CellGroupData[{
+Cell[1477, 49, 254, 5, 28, "Input",ExpressionUUID->"e9565504-3150-4498-b7b0-f3526fd5c125"],
+Cell[1734, 56, 2087, 41, 233, "Output",ExpressionUUID->"d456f904-f3c6-4306-a2d0-b3a231337a03"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3858, 102, 252, 5, 28, "Input",ExpressionUUID->"b2fb7833-1aac-4c1c-b39a-a2038aa1ec81"],
+Cell[4113, 109, 2066, 41, 445, "Output",ExpressionUUID->"3a04b54b-199c-4e8d-a000-bce47133d0ef"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[6216, 155, 252, 5, 28, "Input",ExpressionUUID->"a82064af-e77b-46cb-8f7e-a4e9589f4ccb"],
+Cell[6471, 162, 2062, 41, 544, "Output",ExpressionUUID->"ac5486ce-ad81-4a14-aae8-342033c75a7c"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+
